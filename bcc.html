@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let bCC = "<table border='1' width='300' cellspacing='10' cellpadding='10'>";
+    for (i =1;i<=10; i++){
+        bCC+= "<tr>";
+        for (j=2; j<=9; j++){
+            bCC +="<td>"+ j+ "x" +i +"=" +i*j + "</td>";
+        }
+        bCC+= "</tr>";
+    }
+    bCC+= "</table>";
+    document.write(bCC);
+</script>
+</body>
+</html>

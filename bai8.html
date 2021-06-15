@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let  a = +prompt ("ban muon doan so tu khoang a=");
+    let b = +prompt ("den khoang b = ");
+    let ngaunhien = Math.round(Math.random()*(b-a+1)) + a;
+    for (i=0;i<3;i++){
+    let doanso = +prompt("nhap vao so ban doan");
+    if (doanso ==ngaunhien) {
+    alert ("xin chuc mung ban da doan dung:  "+ doanso);
+    break;
+    } else if (doanso<ngaunhien){
+    alert ("be hon so ngau nhien");
+    } else {
+    alert ("lon hon so ngau nhien");
+    }
+    }
+</script>
+</body>
+</html>
